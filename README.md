@@ -1,10 +1,11 @@
 # Arbitrary Linecut, and Radial Linecuts Averaging
-Extract arbitrary line cut with given terminals and radial linecuts with given center point efficiently. All codes are included in fastLinecut_radialLinecut.ipynb. Given point 1 (pt1) and point 2 (pt2) coordinates, it can take the linecut between the two points efficiently, without using slower scipy package(s). Basically, any pair of coordinates between point 1 (pt1) and point 2 (pt2) can be converted to x- and y- pixel integers, so we don't need any interpolation.
+Extract arbitrary line cut with given terminals and radial linecuts with given center point efficiently. All codes are included in fastLinecut_radialLinecut.ipynb. 
 ## Arbitray Linecut
-Given two coordinates:
+Given point 1 (pt1) and point 2 (pt2) coordinates, it can take the linecut between the two points efficiently, without using slower scipy package(s). Basically, any pair of coordinates between point 1 (pt1) and point 2 (pt2) can be converted to x- and y- pixel integers, so we don't need any interpolation, which speeds up the running.
+For example: given two coordinates:
 pt1 = (-12, -14),
 pt2 = (20, 13),
-we can take the linecut between the two points:
+we can take the linecut between the two points of the star image:
 
 ![Alt text](./screenshot1.png)
 ## Radial Linecuts Averaging
